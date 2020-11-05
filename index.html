@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MicroPython WiFi setup</title>
+
+    <!-- https://github.com/sindresorhus/github-markdown-css -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css">
+    <style>
+      .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+      }
+
+      @media (max-width: 767px) {
+        .markdown-body {
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="markdown-body">
+      <h1>DVD duplicator to give away</h1>
+      
+      <p>If you are based in or around Zurich and would like this DVD duplicator then please email me at <a href="mailto:dvd-duplicator@beta-engine.net"><code>dvd-duplicator@beta-engine.net</code></a></p>
+
+      <p>It cost around Fr. 3000 new but you can have it for free. However, you have to collect it - it weighs about 30kg and I will not mail it out.</p>
+
+      <p>Here's a short video of it in action:</p>
+
+      <video controls preload="metadata">
+        <source src="remove-406x720.mp4" type="video/mp4">
+      </video>
+
+      <p>If it sounds like it's making more noise than it should, it is. There's a cable guide in the central tower that's not doing it's job properly and cables are scrapping against it as the arm moves up and down - it consists of two long pieces cut from a sheet of plastic, i.e. it's not molded or anything complex and should be easy to replace.</p>
+
+      <p>It's being controlled via the a serial link to the Mac sitting beside it. I haven't got it fully setup, it should contain four DVD writers in the tower to the left - at the moment it only has one. The controlling computer should write to the DVD, eject the drive tray and tell the duplicator to remove the disk, moving it to the output pile. There are two other piles, an input pile and a reject pile. After moving a disk to the output pile, the duplicator would then take one from a stack of blanks in the input pile and place it in the tray from which it just removed a disk. If anything went wrong during the process of writing the disk the controlling computer would ask the duplicator to move the resulting disk to the reject pile rather than the output pile.</p>
+
+      <p>Even if you don't want the duplicator, it's full of interesting parts:</p>
+
+      <ul>
+      <li>The motors that turn the center tower and raise and lower its arm.</li>
+      <li>The sensors that allow it to detect which of the four drive trays is open.</li>
+      </ul>
+
+      <p>Here's a top view:</p>
+
+      <img src="top-view.jpg">
+
+      <p>And a front view:</p>
+
+      <img src="top-view.jpg">
+
+      <p>I originally bought it with the intention not of duplicating DVDs but of ripping CDs as a commercial service. This was back when people still had significant collections of CDs that they might want digitised. At this stage, though, most people's CD collections are more decorative than anything else, so I doubt there'd be any demand for such a service anymore.</p>
+    </article>
+  </body>
+</html>
